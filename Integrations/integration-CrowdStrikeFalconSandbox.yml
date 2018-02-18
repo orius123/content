@@ -648,4 +648,40 @@ script:
     - name: timeout
       description: Total wait time (in seconds)
       defaultValue: "60"
+    outputs:
+    - contextPath: File.SHA256
+      description: SHA256 of the file
+    - contextPath: File.SHA1
+      description: SHA1 of the file
+    - contextPath: File.MD5
+      description: MD5 of the file
+    - contextPath: File.environmentId
+      description: 'Environment id of the file '
+    - contextPath: File.analysis_start_time
+      description: Analysis start time of the file
+    - contextPath: File.submitname
+      description: Submission name of the file
+    - contextPath: File.classification_tags
+      description: List of classification tags of the file
+    - contextPath: File.vxfamily
+      description: Family classification of the file
+    - contextPath: File.total_network_connections
+      description: Total network connections of the file
+    - contextPath: File.total_processes
+      description: Total processes count of the file
+    - contextPath: File.total_signatures
+      description: Total signatures count if the file
+    - contextPath: File.hosts
+      description: List of file's hosts
+    - contextPath: File.isinteresting
+      description: If server found this file interesting
+    - contextPath: File.domains
+      description: List of file's related domains
+    - contextPath: File.isurlanalysis
+      description: If file analyzed by url
+    - contextPath: File.Malicious.Vendor
+      description: or malicious files, the vendor that made the decision
+    - contextPath: File.Malicious.Description
+      description: For malicious files, the reason for the vendor to make the decision
     description: Detonate file through Falcon Sandbox
+releaseNotes: "-"
